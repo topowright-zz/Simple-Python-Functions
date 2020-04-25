@@ -1,10 +1,13 @@
 import pandas as pd
 import numpy as np
+import os
+cp = os. getcwd()
+print(cp)
 
-hazards = pd.read_csv(r'C:\Users\lyle6003\Desktop\comparetables\threats.csv')
-threats = pd.read_csv(r'C:\Users\lyle6003\Desktop\comparetables\hazards.csv')
-threat_hazards = pd.read_csv(r'C:\Users\lyle6003\Desktop\comparetables\threats_hazards.csv')
-impacted_assets = pd.read_csv(r'C:\Users\lyle6003\Desktop\comparetables\impacted_assets.csv')
+hazards = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\threats.csv')
+threats = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\hazards.csv')
+threat_hazards = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\threats_hazards.csv')
+impacted_assets = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframesimpacted_assets.csv')
 
 #def removeClosedEvents(threats,hazards,impacted_assets):
 # Combine two feeds into one common feed
