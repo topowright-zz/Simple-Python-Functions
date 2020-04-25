@@ -7,7 +7,7 @@ print(cp)
 hazards = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\threats.csv')
 threats = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\hazards.csv')
 threat_hazards = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\threats_hazards.csv')
-impacted_assets = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframesimpacted_assets.csv')
+impacted_assets = pd.read_csv(r'C:\Users\topow\OneDrive\Documents\GitHub\Simple-Python-Functions\CompareDataframes\impacted_assets.csv')
 
 #def removeClosedEvents(threats,hazards,impacted_assets):
 # Combine two feeds into one common feed
@@ -17,12 +17,12 @@ for index, row in threats.iterrows():
 for index, row in hazards.iterrows():
     threat_hazards = threat_hazards.append(row)
 
-# Creating a list
+# Creating a list of the threats and hazards
 # Copying the threat and hazards into one list
 h_t_list = []
 for index, row in threat_hazards.iterrows():
     h_t_list.append(row.ID)
-
+# Create a list of the current impacted assets
 impacted_assets_list = []
 for index, row in impacted_assets.iterrows():
     impacted_assets_list.append(row.ID)
