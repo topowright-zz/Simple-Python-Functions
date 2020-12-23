@@ -2,7 +2,10 @@ from arcgis.gis import GIS
 import pandas as pd
 import os
 
-
+# Inputs for script:
+# Input the name of the file that we will be pushing to AGOL
+filename= 'filename'
+gis_id = 'item id'
 
 #Username and Password for AGOL
 username = "Emter your username"
