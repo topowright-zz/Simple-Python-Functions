@@ -1,0 +1,6 @@
+﻿id,month,day,year,plot,species,sex,hindfoot_length,weight
+1,7,16,1977,2,NA,M,32,NaN
+2,7,16,1977,3,NA,M,33,NaN
+3,7,16,1977,2,DM,F,37,NaN
+4,7,16,1977,7,DM,M,36,NaN
+5,7,16,1977,3,DM,M,35,NaN
